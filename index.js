@@ -27,7 +27,7 @@ const converterHeat = (type) => {
       realheat = ((5 / 9) * (realheat - 32)).toFixed(2);
       celciusClick = true;
       fahrenheitClick = false;
-      weatherDetails[0].childNodes[1].textContent = `${realheat} °C `;
+      weatherDetails[0].childNodes[3].textContent = `${realheat} °C `;
       document.getElementsByClassName("weather-heats")[0].innerHTML = `${heat}°C <br>Min:${minheat}°C      Max:${maxheat}°C`;
     }
     else {
@@ -46,7 +46,7 @@ const converterHeat = (type) => {
 
       fahrenheitClick = true;
       celciusClick = false;
-      weatherDetails[0].childNodes[1].textContent = `${realheat} °F `;
+      weatherDetails[0].childNodes[3].textContent = `${realheat} °F `;
       document.getElementsByClassName("weather-heats")[0].innerHTML = `
       ${heat}°F <br>Min:${minheat}°F      Max:${maxheat}°F
       `;
@@ -184,10 +184,10 @@ const getResult = async (city) => {
       document.getElementsByClassName("weather-heats")[0].innerHTML = `
       ${data.main.temp}°C <br>Min:${data.main.temp_min}°C      Max:${data.main.temp_max}°C
       `;
-      weatherDetails[0].childNodes[1].textContent = `${data.main.feels_like} °C `;
-      weatherDetails[1].childNodes[1].textContent = `${data.wind.speed} m/s `;
-      weatherDetails[2].childNodes[1].textContent = `${data.main.humidity} % `;
-      weatherDetails[3].childNodes[1].textContent = `${data.main.pressure} bar `;
+      weatherDetails[0].childNodes[3].textContent = `${data.main.feels_like} °C `;
+      weatherDetails[1].childNodes[3].textContent = `${data.wind.speed} m/s `;
+      weatherDetails[2].childNodes[3].textContent = `${data.main.humidity} % `;
+      weatherDetails[3].childNodes[3].textContent = `${data.main.pressure} bar `;
       time();
       weathersituation(data.weather[0].main);
     })
