@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <!--! Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--! BACKGROUND VİDEO START  -->
+    <div class="videos">
+        <video src="arkaplan.mp4" autoplay muted loop></video>
+    </div>
+   <!--! BACKGROUND VİDEO STOP  -->
+    <div class="container">
+        <div class="card">
+            <!--! SEARCH CİTY INPUT AND CONVERTER HEAT TYPES İCONS SECTİONS START -->
+            <div class="card-header">
+                <!--! SEARCH CİTY INPUT START  -->
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search" type="text" placeholder="Lütfen bir şehir ismi girin">
+                </div>
+                <!--! SEARCH CİTY INPUT STOP  --> 
+                <!--! CONVERTER HEAT TYPES İCONS START  -->
+                <div class="heat-converter" >
+                    <span id="fahrenheit">
+                        <strong>°F</strong>
+                    </span>
+                    <span id="celcius">
+                        <strong>°C</strong>
+                    </span>
+                </div>
+                <!--! CONVERTER HEAT TYPES İCONS STOP  -->
+            </div>
+             <!--! SEARCH CİTY INPUT AND CONVERTER HEAT TYPES İCONS SECTİONS STOP -->
+             <!--! WEATHER LOCATİON START  -->
+            <div class="weather-location"></div>
+            <!--! WEATHER LOCATİON STOP  -->
+            <!--! WEATHER TİME START  -->
+            <div class="weather-date"></div>
+            <!--! WEATHER TİME STOP  -->
+            <!--! WEATHER SİTUATİON TİTLE START  -->
+            <div class="weather-situation">
+                <span class="badge"></span>
+            </div>
+            <!--! WEATHER SİTUATİON TİTLE STOP  -->
+            <!--! WAETHER SİTUATİON İCON START  -->
+            <div class="weather-situation-icon">
+                <i id="situation-icon" class="fa-solid fa-cloud"></i>
+            </div>
+            <!--! WAETHER SİTUATİON İCON STOP  -->
+            <!--! WEATHER MAX,MİN AND ORT HEAT START  -->
+            <div class="weather-heats"><br></div>
+            <!--! WEATHER MAX,MİN AND ORT HEAT STOP  -->
+            <!--! WEATHER DETAİLS START  -->
+            <div class="weather-details">
+                <!--! REAL FEEL HEAT START  -->
+                <div class="weather-detail-card">
+                    <div class="weather-detail-icon">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                    </div>
+                    <div class="weather-detail-info">
+                        <h3>Real Feel</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!--! REAL FEEL HEAT STOP  -->
+                <!--! WİND SİTUATİON  SECTİON  START -->
+                <div class="weather-detail-card">
+                    <div class="weather-detail-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <div class="weather-detail-info">
+                        <h3>Wind</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!--! WİND SİTUATİON  SECTİON  STOP -->
+                <!--! HUMİDİTY SİTUATİON SECTİON START  -->
+                <div class="weather-detail-card">
+                    <div class="weather-detail-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div class="weather-detail-info">
+                        <h3>Humidity</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!--! HUMİDİTY SİTUATİON SECTİON STOP  -->  
+                <!--! PRESSURE SİTUATİON SECTİON START  -->
+                <div class="weather-detail-card">
+                    <div class="weather-detail-icon">
+                        <i class="fa-solid fa-gauge-high" ></i>
+                    </div>
+                    <div class="weather-detail-info">
+                        <h3>Pressure</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!--! PRESSURE SİTUATİON SECTİON STOP  -->
+            </div>
+            <!--! WEATHER DETAİLS STOP  -->
+        </div>
+    </div>
+  <script  src="index.js"></script>
+</body>
+</html>
+   
